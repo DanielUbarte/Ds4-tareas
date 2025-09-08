@@ -1,0 +1,15 @@
+C:\Users\Daniel Ubarte\source\repos\Ds4-tareas\.vs\actividad3_circulo\bin\Debug\net8.0\actividad3_circulo.exe
+C:\Users\Daniel Ubarte\source\repos\Ds4-tareas\.vs\actividad3_circulo\bin\Debug\net8.0\actividad3_circulo.deps.json
+C:\Users\Daniel Ubarte\source\repos\Ds4-tareas\.vs\actividad3_circulo\bin\Debug\net8.0\actividad3_circulo.runtimeconfig.json
+C:\Users\Daniel Ubarte\source\repos\Ds4-tareas\.vs\actividad3_circulo\bin\Debug\net8.0\actividad3_circulo.dll
+C:\Users\Daniel Ubarte\source\repos\Ds4-tareas\.vs\actividad3_circulo\bin\Debug\net8.0\actividad3_circulo.pdb
+C:\Users\Daniel Ubarte\source\repos\Ds4-tareas\.vs\actividad3_circulo\obj\Debug\net8.0\actividad3_circulo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Daniel Ubarte\source\repos\Ds4-tareas\.vs\actividad3_circulo\obj\Debug\net8.0\actividad3_circulo.AssemblyInfoInputs.cache
+C:\Users\Daniel Ubarte\source\repos\Ds4-tareas\.vs\actividad3_circulo\obj\Debug\net8.0\actividad3_circulo.AssemblyInfo.cs
+C:\Users\Daniel Ubarte\source\repos\Ds4-tareas\.vs\actividad3_circulo\obj\Debug\net8.0\actividad3_circulo.csproj.CoreCompileInputs.cache
+C:\Users\Daniel Ubarte\source\repos\Ds4-tareas\.vs\actividad3_circulo\obj\Debug\net8.0\actividad3_circulo.sourcelink.json
+C:\Users\Daniel Ubarte\source\repos\Ds4-tareas\.vs\actividad3_circulo\obj\Debug\net8.0\actividad3_circulo.dll
+C:\Users\Daniel Ubarte\source\repos\Ds4-tareas\.vs\actividad3_circulo\obj\Debug\net8.0\refint\actividad3_circulo.dll
+C:\Users\Daniel Ubarte\source\repos\Ds4-tareas\.vs\actividad3_circulo\obj\Debug\net8.0\actividad3_circulo.pdb
+C:\Users\Daniel Ubarte\source\repos\Ds4-tareas\.vs\actividad3_circulo\obj\Debug\net8.0\actividad3_circulo.genruntimeconfig.cache
+C:\Users\Daniel Ubarte\source\repos\Ds4-tareas\.vs\actividad3_circulo\obj\Debug\net8.0\ref\actividad3_circulo.dll
