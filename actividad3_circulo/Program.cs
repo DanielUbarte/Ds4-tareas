@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 //Console.WriteLine("Hello, World!");
+//circulos
 Console.WriteLine("Bienvenido, calculemos círculos!");
 
 var radio = 0d; //declaracion de variable
