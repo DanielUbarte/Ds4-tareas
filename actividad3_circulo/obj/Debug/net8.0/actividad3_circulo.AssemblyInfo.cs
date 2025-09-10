@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("actividad3_circulo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b7cd5cffdc9fa614c52ee496089ed698ab8cc870")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+91350e0bdf2372e084b146577b52dbb3415c6131")]
 [assembly: System.Reflection.AssemblyProductAttribute("actividad3_circulo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("actividad3_circulo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
