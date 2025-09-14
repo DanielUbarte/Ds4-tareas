@@ -3,8 +3,6 @@
 
 //Actividad 8, switch
 
-//condicionales_Actividad 7
-
 int totalJugador = 0;
 int Totaldealer = 15;
 string message = " ";
@@ -40,4 +38,7 @@ string switchControl = " ";
                 Console.WriteLine(message);
             }
             break;
-    }
+            default: //si la opción no es ni reglas ni 21
+                Console.WriteLine("Opción inválida, escribe 'reglas' o '21'");
+            break;
+}
