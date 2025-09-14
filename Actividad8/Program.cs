@@ -5,32 +5,39 @@
 
 //condicionales_Actividad 7
 
-int totalJugador = 10;
+int totalJugador = 0;
 int Totaldealer = 15;
 string message = " ";
-string switchControl = "";
+string switchControl = " ";
 
-//para ganar en blackjack el jugador debe tener 21 puntos o menos y tener mas puntos que el dealer
-Console.WriteLine("ingresa un número entre 1 y 21");
-totalJugador = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("Escribe 'reglas' para ver las reglas del juego o escribe '21' para jugar blackjack");
+    switchControl = Console.ReadLine();
+    switch (switchControl) {
+        case "reglas":
+            Console.WriteLine("Welcome al casino");
+            Console.WriteLine("//para ganar en blackjack el jugador debe tener 21 puntos" +
+            " o menos y tener mas puntos que el dealer");
+        break;
 
-switch (switchControl) {
-    case "menu":
-        Console.WriteLine("Welcome al casino");
-        Console.WriteLine("Escriba blackjack");
-        if (totalJugador > 21)
-{
-    message = "Opción invalidada, tú número debe ser menor o igual a 21";
-    Console.WriteLine(message);
-}
-else if (totalJugador <= Totaldealer)
-{
-    message = "Perdiste vs el dealer, lo siento";
-    Console.WriteLine(message);
-}
-else if (totalJugador > Totaldealer)
-{
-    message = "Venciste al dealer, felicidades";
-    Console.WriteLine(message);
-}
-}
+        case "21":
+            //para ganar en blackjack el jugador debe tener 21 puntos o menos y tener mas puntos que el dealer
+            Console.WriteLine("ingresa un número entre 1 y 21");
+            totalJugador = Convert.ToInt32(Console.ReadLine());
+
+            if (totalJugador > 21)
+            {
+                message = "Opción invalidada, tú número debe ser menor o igual a 21";
+                Console.WriteLine(message);
+            }
+            else if (totalJugador <= Totaldealer)
+            {
+                message = "Perdiste vs el dealer, lo siento";
+                Console.WriteLine(message);
+            }
+            else if (totalJugador > Totaldealer)
+            {
+                message = "Venciste al dealer, felicidades";
+                Console.WriteLine(message);
+            }
+            break;
+    }
