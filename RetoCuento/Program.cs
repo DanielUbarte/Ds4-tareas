@@ -4,6 +4,8 @@
 using System.Text;
 using System.Text.RegularExpressions;
 
+
+//creacion de cuento
 // 1) Leer cuento.txt
 if (!File.Exists("cuento.txt"))
 {
