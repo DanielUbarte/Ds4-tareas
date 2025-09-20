@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 
+// Archivo de cuento
 string cuentoPath = "Cuento.txt";
 string salida = "";
 string resultadosPath = "resultado.txt";
