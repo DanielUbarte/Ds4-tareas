@@ -2,6 +2,7 @@
 using System.Text;                      // Espacio de nombres para trabajar con texto
 using Actividad19_poo.Models;           // Importa las clases definidas en tu proyecto (SuperPoder, SuperHero, etc.)
 
+try {
 // === Creación de poderes ===
 var poderVolar = new SuperPoder();      // Se instancia un poder
 poderVolar.Nombre = "Super Volar";      // Nombre del poder
@@ -53,6 +54,11 @@ Console.WriteLine("Listado de poderes de Superman:");
 // Superman usa sus poderes
 string resultSuperPoderes = superman.UsarSuperPoderes();
 Console.WriteLine(resultSuperPoderes);  // Se muestra el resultado en consola
+}
+catch (Exception ex)
+{
+    Console.WriteLine($"Se ha producido un error: {ex.Message}");
+}
 
 // === Enumeración de niveles de poder ===
 enum NivelPoder
