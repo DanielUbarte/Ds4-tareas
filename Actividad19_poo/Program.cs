@@ -30,7 +30,7 @@ superman.Nombre = "Superman";
 superman.IdentidadSecreta = "Clark Kent";
 superman.Ciudad = "Metropolis";
 superman.PuedeVolar = true;
-
+Console.WriteLine("Se busca conocer si este metodo de comparacion == funciona con ambos superheroes");
 // === Comparaciones ===
 Console.WriteLine(superman == superman2);
 // Muestra False, porque son dos referencias diferentes de clase.
@@ -38,7 +38,7 @@ Console.WriteLine(superman == superman2);
 // Creación de dos records con la misma información
 superHeroRecord superheroRecord = new superHeroRecord(1, "Superman", "Clark Kent");
 superHeroRecord superheroRecord2 = new superHeroRecord(1, "Superman", "Clark Kent");
-
+Console.WriteLine("Creamos records, con intención de hacer la misma comparación");
 Console.WriteLine(superheroRecord == superheroRecord2);
 // Muestra True, porque los records comparan por valor.
 
@@ -48,6 +48,8 @@ poderesSuperman.Add(poderVolar);        // Se agrega el poder de volar
 poderesSuperman.Add(poderFuerza);       // Se agrega el poder de fuerza
 superman.SuperPoderes = poderesSuperman; // Se asigna la lista de poderes al héroe
 
+Console.WriteLine(); // Línea en blanco para separar secciones en la consola
+Console.WriteLine("Listado de poderes de Superman:");
 // Superman usa sus poderes
 string resultSuperPoderes = superman.UsarSuperPoderes();
 Console.WriteLine(resultSuperPoderes);  // Se muestra el resultado en consola
