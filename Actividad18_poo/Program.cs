@@ -88,6 +88,4 @@ enum NivelPoder
     niveltres
 }
 
-public record superHeroRecord(int ID, string Nombre, string Identidad){
-
-}
+public record superHeroRecord(int ID, string Nombre, string Identidad);
