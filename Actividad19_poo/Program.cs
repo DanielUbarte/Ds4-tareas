@@ -1,52 +1,65 @@
 ﻿
-using System.Text;
-using Actividad19_poo.Models;
+using System.Text;                      // Espacio de nombres para trabajar con texto
+using Actividad19_poo.Models;           // Importa las clases definidas en tu proyecto (SuperPoder, SuperHero, etc.)
 
-var poderVolar = new SuperPoder();
-poderVolar.Nombre = "Super Volar";
-poderVolar.decripcion = "Capacidad para volar y planear en el aire";
-poderVolar.Nivel = NivelPoder.niveldos;
+// === Creación de poderes ===
+var poderVolar = new SuperPoder();      // Se instancia un poder
+poderVolar.Nombre = "Super Volar";      // Nombre del poder
+poderVolar.decripcion = "Capacidad para volar y planear en el aire"; // Descripción del poder
+poderVolar.Nivel = NivelPoder.niveldos; // Se asigna el nivel del poder (según enum)
 
+// Segundo poder
 var poderFuerza = new SuperPoder();
-poderVolar.Nombre = "Super Fuerza";
-poderVolar.decripcion = "Capacidad para levantar objetos extremadamente pesados";
-poderVolar.Nivel = NivelPoder.niveltres;
+poderFuerza.Nombre = "Super Fuerza";
+poderFuerza.decripcion = "Capacidad para levantar objetos extremadamente pesados";
+poderFuerza.Nivel = NivelPoder.niveltres;
 
+// === Creación de un superhéroe ===
 var superman = new SuperHero();
+superman.ID = 1;                        // Identificador
+superman.Nombre = "Superman";           // Nombre público
+superman.IdentidadSecreta = "Clark Kent"; // Identidad secreta
+superman.Ciudad = "Metropolis";         // Ciudad de origen
+superman.PuedeVolar = true;             // Indica que puede volar
 
-superman.ID = 1;
-superman.Nombre = "Superman";
-superman.IdentidadSecreta = "Clark Kent";
-superman.Ciudad = "Metropolis";
-superman.PuedeVolar = true;
-
+// Segundo superhéroe (superman2) — en este bloque accidentalmente 
+// se vuelve a modificar el objeto superman en vez de superman2.
 var superman2 = new SuperHero();
-
 superman.ID = 1;
 superman.Nombre = "Superman";
 superman.IdentidadSecreta = "Clark Kent";
 superman.Ciudad = "Metropolis";
 superman.PuedeVolar = true;
 
+// === Comparaciones ===
 Console.WriteLine(superman == superman2);
+// Muestra False, porque son dos referencias diferentes de clase.
 
+// Creación de dos records con la misma información
 superHeroRecord superheroRecord = new superHeroRecord(1, "Superman", "Clark Kent");
 superHeroRecord superheroRecord2 = new superHeroRecord(1, "Superman", "Clark Kent");
 
 Console.WriteLine(superheroRecord == superheroRecord2);
+// Muestra True, porque los records comparan por valor.
 
-/*List<SuperPoder> poderesSuperman = new List<SuperPoder>();
-poderesSuperman.Add(poderVolar);
-poderesSuperman.Add(poderFuerza);
-superman.SuperPoderes = poderesSuperman;
+// === Asignación de poderes a Superman ===
+List<SuperPoder> poderesSuperman = new List<SuperPoder>();
+poderesSuperman.Add(poderVolar);        // Se agrega el poder de volar
+poderesSuperman.Add(poderFuerza);       // Se agrega el poder de fuerza
+superman.SuperPoderes = poderesSuperman; // Se asigna la lista de poderes al héroe
+
+// Superman usa sus poderes
 string resultSuperPoderes = superman.UsarSuperPoderes();
-Console.WriteLine(resultSuperPoderes);*/
+Console.WriteLine(resultSuperPoderes);  // Se muestra el resultado en consola
 
+// === Enumeración de niveles de poder ===
 enum NivelPoder
 {
-    niveluno,
-    niveldos,
-    niveltres
+    niveluno,   // Nivel 1
+    niveldos,   // Nivel 2
+    niveltres   // Nivel 3
 }
 
+// === Record de superhéroe ===
+// Define un tipo inmutable por valor, que permite comparaciones por contenido
 public record superHeroRecord(int ID, string Nombre, string Identidad);
