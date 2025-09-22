@@ -1,8 +1,7 @@
 ﻿using System;                           // Espacio de nombres base de .NET
 using System.Collections.Generic;       // Para usar List<T>
-using System.Linq;                      // Métodos de LINQ (no usados aquí, pero referenciados)
 using System.Text;                      // Para usar StringBuilder
-using System.Threading.Tasks;           // Para programación asíncrona (no usado aquí)
+
 
 namespace Actividad19_poo.Models         // Namespace donde está contenida la clase
 {

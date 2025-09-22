@@ -1,6 +1,4 @@
 ﻿using System;                          // Espacio de nombres base de .NET
-using System.Collections.Generic;      // Colecciones genéricas (List, Dictionary, etc.)
-using System.Linq;                     // Métodos LINQ para colecciones
 using System.Text;                     // Funcionalidades para manejo de texto y codificaciones
 using System.Threading.Tasks;          // Soporte para tareas asíncronas
 
