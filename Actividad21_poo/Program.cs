@@ -1,7 +1,7 @@
 ﻿using Actividad19_poo.Models;
 using Actividad21_poo.model;           // Importa las clases definidas en tu proyecto (SuperPoder, SuperHero, etc.)
 //Video 14
-//Encapsulamiento en Programación Orientada a Objetos
+//Herencia
 
 try
 {
