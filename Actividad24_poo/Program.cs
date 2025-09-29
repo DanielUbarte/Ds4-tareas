@@ -1,7 +1,7 @@
 ﻿using Actividad19_poo.Models;
 using Actividad21_poo.model;
 using Actividad24_poo;           // Importa las clases definidas en tu proyecto (SuperPoder, SuperHero, etc.)
-//Video 17
+//Video 18
 //interfaces
 
 try

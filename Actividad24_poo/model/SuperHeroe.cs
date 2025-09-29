@@ -33,9 +33,6 @@ namespace Actividad19_poo.Models         // Namespace donde está contenida la c
             }
         }
 
-        public int Id { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        string ISuperHeroe.IdentidadSecreta { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-
         public string IdentidadSecreta { get; set; }  // Identidad secreta (ej: "Clark Kent")
         public string Ciudad;            // Ciudad donde actúa el héroe
         public List<SuperPoder> SuperPoderes; // Lista de poderes asociados al héroe
