@@ -12,7 +12,7 @@ namespace Actividad19_poo.Models         // Namespace donde está contenida la c
     class SuperHeroe : Heroe, ISuperHeroe
     {
         private string _Nombre; // Campo privado para el nombre del héroe
-        public int ID { get; set; }                  // Identificador único del héroe
+        public int ID { get; set; }// Identificador único del héroe
         public override string Nombre
         {
             get

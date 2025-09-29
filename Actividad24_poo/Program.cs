@@ -6,7 +6,7 @@ using Actividad24_poo;           // Importa las clases definidas en tu proyecto 
 
 try
 {
-    var imprimirInfo = new ImprimirInfo();
+    var imprimirInfo = new ImprimirInfo(); // Instancia de la clase para imprimir información
 
     // === Creación de poderes ===
     var poderVolar = new SuperPoder();      // Se instancia un poder
@@ -37,7 +37,7 @@ try
     superman.Ciudad = "Metropolis";         // Ciudad de origen
     superman.PuedeVolar = true;             // Indica que puede volar
 
-    imprimirInfo.ImprimirSuperHeroe(superman);
+    imprimirInfo.ImprimirSuperHeroe(superman); // Imprime la información del superhéroe
 
     // === Asignación de poderes a Superman ===
     List<SuperPoder> poderesSuperman = new List<SuperPoder>();
@@ -53,17 +53,16 @@ try
     Console.WriteLine(); // Línea en blanco para separar secciones en la consola
 
     Console.WriteLine("Listado de poderes de Superman:");
-    // Superman usa sus poderes
-    string resultSuperPoderes = superman.UsarSuperPoderes();
+    string resultSuperPoderes = superman.UsarSuperPoderes();// Llamada al método para usar superpoderes
     Console.WriteLine(resultSuperPoderes);  // Se muestra el resultado en consola
 
-    var wolverine = new AntiHeroe();
+    var wolverine = new AntiHeroe();// Se instancia un antihéroe
     wolverine.ID = 5;
     wolverine.Nombre = "Wolverine";
     wolverine.IdentidadSecreta = "Logan";
     wolverine.PuedeVolar = false;
 
-    imprimirInfo.ImprimirSuperHeroe(wolverine);
+    imprimirInfo.ImprimirSuperHeroe(wolverine);// Imprime la información del antihéroe
 
     // === Asignación de poderes a Superman ===
     List<SuperPoder> poderesWolverine = new List<SuperPoder>();
