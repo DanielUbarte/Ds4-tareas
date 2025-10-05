@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Actividad24_poo
 {
     internal class ImprimirInfo
-    {
+    { 
         public void ImprimirSuperHeroe(ISuperHeroe superHeroe)
         {
             Console.WriteLine($"ID: {superHeroe.ID}");
