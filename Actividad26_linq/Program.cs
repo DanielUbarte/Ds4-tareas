@@ -1,6 +1,18 @@
 ﻿// See https://aka.ms/new-console-template for more information
 //Console.WriteLine("Hello, World!");
 
-//video 7
+//video 8
+LinqQueries queries = new LinqQueries();//instancia de la clase LinqQueries
 
+ImprimirValores(queries.TodaLaColeccion()); //imprime toda la coleccion de libros
+void ImprimirValores(IEnumerable<book> listalibros) //metodo para imprimir los valores en consola
+{
+    //Muestra los titulos de las columnas
+    Console.WriteLine("{0, -60} {1, 15} {2, 15}", "Titulo", "N. Paginas", "Fecha publicacion");
+    foreach(var item in listalibros)
+    {
+        //Muestra los valores en consola
+        Console.WriteLine("{0, -60} {1, 15} {2, 15}", item.Title, item.PageCount, item.PublisheDate.ToShortDateString());
+    }
+}
 

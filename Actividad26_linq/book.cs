@@ -4,8 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Actividad26_linq
-{
+
     public class book
     {
         public string Title { get; set; }
@@ -15,4 +14,3 @@ namespace Actividad26_linq
         public string[] Authors { get; set; }
         public string[] Categories { get; set; }
     }
-}

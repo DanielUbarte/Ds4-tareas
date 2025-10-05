@@ -1,16 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Actividad26_linq
-{
     public class LinqQueries
     {
-        public LinqQueries()
-        { 
-        
+        private List<book> librosCollection = new List<book>(); //lista de libros
+    public LinqQueries()
+        {
+        string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\books.json");
+        using (StreamReader reader = new StreamReader(path)) //lee el archivo json
+        {
+            string json = reader.ReadToEnd(); //lee todo el contenido del archivo
+            //deserializa el json a una lista de libros
+            this.librosCollection = System.Text.Json.JsonSerializer.Deserialize<List<book>>(json, new System.Text.Json.JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
+        }
+        }
+        public IEnumerable<book> TodaLaColeccion()//retorna toda la coleccion de libros 
+    {
+            return librosCollection;
         }
     }
-}
+
