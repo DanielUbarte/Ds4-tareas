@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,8 +20,23 @@ using System.Threading.Tasks;
         }
         }
         public IEnumerable<book> TodaLaColeccion()//retorna toda la coleccion de libros 
-    {
+        {
             return librosCollection;
+        }
+        public IEnumerable<book> LibrosDespuesDel2000()  //reto where
+        {
+        //return librosCollection.Where(p=> p.PublishedDate.Year > 2000);
+        //query epresion
+        return from l in librosCollection where l.PublishedDate.Year > 2000 select l;
+        }
+     
+        public IEnumerable<book> librosConMasDe250pagConPalabrasInAction() 
+        {
+        //extension methods
+        //return librosCollection.Where(p => p.PageCount > 250 && p.Title.Contains("in Action"));
+
+        //query expression
+        return from l in librosCollection where l.PageCount > 250 && l.Title.Contains("in Action") select l;
         }
     }
 
