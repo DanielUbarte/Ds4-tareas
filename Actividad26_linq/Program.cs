@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 //Console.WriteLine("Hello, World!");
 
-//video 13
+//video 15
 
 LinqQueries queries = new LinqQueries();//instancia de la clase LinqQueries
 //toda la coleccion
@@ -26,7 +26,13 @@ LinqQueries queries = new LinqQueries();//instancia de la clase LinqQueries
 //ImprimirValores(queries.LibrosDeJavaPorNombreAscendente());
 
 //libros de mas de 450 paginas
-ImprimirValores(queries.LibrosDeMasDe450pagOrdenadoPorNumPagDescendente());
+//ImprimirValores(queries.LibrosDeMasDe450pagOrdenadoPorNumPagDescendente());
+
+//tres primeros libros
+//ImprimirValores(queries.TresPrimerosLibrosOrdenadoPorFecha());
+
+//mostrar el tercer y cuarto libro
+ImprimirValores(queries.TerceryCuartoLibroDeMasDe400Pag());
 
 void ImprimirValores(IEnumerable<book> listalibros) //metodo para imprimir los valores en consola
 {
