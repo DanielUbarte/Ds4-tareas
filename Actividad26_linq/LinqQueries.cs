@@ -41,26 +41,31 @@ using System.Threading.Tasks;
 
         public bool TodosLosLibrosTienenStatus()
         {
+        //Retorna un true o false sobre si los libros tienen la propiedad status
         return librosCollection.All(p => p.Status != string.Empty);   
         }
 
         public bool SiAlgunLibroFuePublicado2005()
         {
+        //retorna verdadero o falso si hay libros del 2005
         return librosCollection.Any(p => p.PublishedDate.Year == 2005);
         }
 
         public IEnumerable<book> LibrosDePython()
         {
+        //libros que estén en la categoría python
         return librosCollection.Where(p => p.Categories.Contains("Python"));
         }
 
         public IEnumerable<book> LibrosDeJavaPorNombreAscendente()
         { 
+            //libros que esten en la categoria de java y en su titulo
             return librosCollection.Where(p=> p.Categories.Contains("Java")).OrderBy(p=> p.Title);
         }
 
         public IEnumerable<book> LibrosDeMasDe450pagOrdenadoPorNumPagDescendente()
         {
+        //consigue libros de mas de 
             return librosCollection.Where(p=> p.PageCount > 450).OrderByDescending(p=> p.PageCount);
         }
 
@@ -71,7 +76,7 @@ using System.Threading.Tasks;
             .TakeLast(3);
         }
 
-        public IEnumerable<book> TerceryCuartoLibroDeMasDe400Pag()
+        public IEnumerable<book> TerceryCuartoLibroDeMasDe400Pag() 
         {
             return librosCollection.Where(p=> p.PageCount > 400)
             .Take(4)

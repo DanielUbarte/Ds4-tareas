@@ -11,30 +11,45 @@ LinqQueries queries = new LinqQueries();//instancia de la clase LinqQueries
 //ImprimirValores(queries.LibrosDespuesDel2000()); //imprime los libros despues del 2000
 
 //libros con mas de 250 paginas y con palabras in action
-//ImprimirValores(queries.librosConMasDe250pagConPalabrasInAction());
+Console.WriteLine("Libros con mas de 250 paginas");
+ImprimirValores(queries.librosConMasDe250pagConPalabrasInAction());
 
 //todos los libros tienen status
-//Console.WriteLine($"Todos los libros tienen status? {queries.TodosLosLibrosTienenStatus()}");
+Console.WriteLine();
+Console.WriteLine($"Todos los libros tienen status? {queries.TodosLosLibrosTienenStatus()}");
+Console.WriteLine();
 
 //algun libro fue publicado en 2005
-//Console.WriteLine($"Algun libro fue publicado en 2005? {queries.SiAlgunLibroFuePublicado2005()}");
+Console.WriteLine($"Algun libro fue publicado en 2005? {queries.SiAlgunLibroFuePublicado2005()}");
+Console.WriteLine();
 
 //libros de python
-//ImprimirValores(queries.LibrosDePython());
+Console.WriteLine("Muestra los libros de python");
+ImprimirValores(queries.LibrosDePython());
+Console.WriteLine();
 
 //libros de java por nombre ascendente
-//ImprimirValores(queries.LibrosDeJavaPorNombreAscendente());
+Console.WriteLine("Libros de java de forma ascendente");
+ImprimirValores(queries.LibrosDeJavaPorNombreAscendente());
+Console.WriteLine();
 
 //libros de mas de 450 paginas
-//ImprimirValores(queries.LibrosDeMasDe450pagOrdenadoPorNumPagDescendente());
+Console.WriteLine("Libros con más de 450 páginas");
+ImprimirValores(queries.LibrosDeMasDe450pagOrdenadoPorNumPagDescendente());
+Console.WriteLine();
 
 //tres primeros libros
-//ImprimirValores(queries.TresPrimerosLibrosOrdenadoPorFecha());
+Console.WriteLine("Libros ordenados por fecha");
+ImprimirValores(queries.TresPrimerosLibrosOrdenadoPorFecha());
+Console.WriteLine();
 
 //mostrar el tercer y cuarto libro
-//ImprimirValores(queries.TerceryCuartoLibroDeMasDe400Pag());
+Console.WriteLine("tercer y cuarto libro de 400 páginas");
+ImprimirValores(queries.TerceryCuartoLibroDeMasDe400Pag());
+Console.WriteLine();
 
 //tres primeros libros con select
+Console.WriteLine("Los tres primeros libros de la colección");
 ImprimirValores(queries.TresPrimerosLibrosDeLaColeccion());
 
 void ImprimirValores(IEnumerable<book> listalibros) //metodo para imprimir los valores en consola
