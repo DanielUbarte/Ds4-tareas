@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 //Console.WriteLine("Hello, World!");
 
-//video 9
+//video 11
 
 LinqQueries queries = new LinqQueries();//instancia de la clase LinqQueries
 //toda la coleccion
@@ -11,7 +11,13 @@ LinqQueries queries = new LinqQueries();//instancia de la clase LinqQueries
 //ImprimirValores(queries.LibrosDespuesDel2000()); //imprime los libros despues del 2000
 
 //libros con mas de 250 paginas y con palabras in action
-ImprimirValores(queries.librosConMasDe250pagConPalabrasInAction());
+//ImprimirValores(queries.librosConMasDe250pagConPalabrasInAction());
+
+//todos los libros tienen status
+//Console.WriteLine($"Todos los libros tienen status? {queries.TodosLosLibrosTienenStatus()}");
+
+//algun libro fue publicado en 2005
+Console.WriteLine($"Algun libro fue publicado en 2005? {queries.SiAlgunLibroFuePublicado2005()}");
 void ImprimirValores(IEnumerable<book> listalibros) //metodo para imprimir los valores en consola
 {
     //Muestra los titulos de las columnas
