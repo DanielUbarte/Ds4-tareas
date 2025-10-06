@@ -76,7 +76,12 @@ using System.Threading.Tasks;
             return librosCollection.Where(p=> p.PageCount > 400)
             .Take(4)
             .Skip(2);
-    }
+        }
 
+        public IEnumerable<book> TresPrimerosLibrosDeLaColeccion()
+        {
+        return librosCollection.Take(3)
+        .Select(p => new book() { Title = p.Title, PageCount = p.PageCount });
+        }
 }
 
