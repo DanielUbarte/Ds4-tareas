@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 //Console.WriteLine("Hello, World!");
 
-//video 11
+//video 12
 
 LinqQueries queries = new LinqQueries();//instancia de la clase LinqQueries
 //toda la coleccion
@@ -17,7 +17,11 @@ LinqQueries queries = new LinqQueries();//instancia de la clase LinqQueries
 //Console.WriteLine($"Todos los libros tienen status? {queries.TodosLosLibrosTienenStatus()}");
 
 //algun libro fue publicado en 2005
-Console.WriteLine($"Algun libro fue publicado en 2005? {queries.SiAlgunLibroFuePublicado2005()}");
+//Console.WriteLine($"Algun libro fue publicado en 2005? {queries.SiAlgunLibroFuePublicado2005()}");
+
+//libros de python
+ImprimirValores(queries.LibrosDePython());
+
 void ImprimirValores(IEnumerable<book> listalibros) //metodo para imprimir los valores en consola
 {
     //Muestra los titulos de las columnas

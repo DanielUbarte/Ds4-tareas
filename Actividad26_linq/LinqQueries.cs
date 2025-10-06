@@ -48,5 +48,10 @@ using System.Threading.Tasks;
         {
         return librosCollection.Any(p => p.PublishedDate.Year == 2005);
         }
-    }
+
+        public IEnumerable<book> LibrosDePython()
+        {
+        return librosCollection.Where(p => p.Categories.Contains("Python"));
+        }
+}
 
