@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 //Console.WriteLine("Hello, World!");
 
-//video 18
+//video 19
 
 LinqQueries queries = new LinqQueries();//instancia de la clase LinqQueries
 //toda la coleccion
@@ -59,8 +59,15 @@ LinqQueries queries = new LinqQueries();//instancia de la clase LinqQueries
 //Console.WriteLine($"Fecha de publicacion menor de todos los libros: {queries.FechaDePublicacionMenor()}");
 
 //numero de paginas del libro con mayor numero de paginas
-Console.WriteLine($"Número de páginas del libro con mayor número de páginas: {queries.NumeroDePagLibroMayor()}");
+//Console.WriteLine($"Número de páginas del libro con mayor número de páginas: {queries.NumeroDePagLibroMayor()}");
 
+//libro con menor numero de paginas
+//var libromenorpag = queries.LibroConMenorNumeroDePag();
+//Console.WriteLine(libromenorpag.Title);
+
+//libro con fecha publicacion mas reciente
+var libromasreciente = queries.LibroConFechaPublicacionMasReciente();
+Console.WriteLine(libromasreciente.Title);
 void ImprimirValores(IEnumerable<book> listalibros) //metodo para imprimir los valores en consola
 {
     //Muestra los titulos de las columnas
