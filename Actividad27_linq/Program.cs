@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 //Console.WriteLine("Hello, World!");
 
-//videoos del 17 al 26
+//video 17
 
 LinqQueries queries = new LinqQueries();//instancia de la clase LinqQueries
 //toda la coleccion
@@ -49,8 +49,11 @@ LinqQueries queries = new LinqQueries();//instancia de la clase LinqQueries
 //Console.WriteLine();
 
 //tres primeros libros con select
-Console.WriteLine("Los tres primeros libros de la colección");
-ImprimirValores(queries.TresPrimerosLibrosDeLaColeccion());
+//Console.WriteLine("Los tres primeros libros de la colección");
+//ImprimirValores(queries.TresPrimerosLibrosDeLaColeccion());
+
+Console.WriteLine($"Cantidad de libros que tiene entre 200 y 500 pg");
+Console.WriteLine(queries.CantidadDeLibrosEntre200y500pag());
 
 void ImprimirValores(IEnumerable<book> listalibros) //metodo para imprimir los valores en consola
 {
