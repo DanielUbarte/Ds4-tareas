@@ -66,8 +66,11 @@ LinqQueries queries = new LinqQueries();//instancia de la clase LinqQueries
 //Console.WriteLine(libromenorpag.Title);
 
 //libro con fecha publicacion mas reciente
-var libromasreciente = queries.LibroConFechaPublicacionMasReciente();
-Console.WriteLine(libromasreciente.Title);
+//var libromasreciente = queries.LibroConFechaPublicacionMasReciente();
+//Console.WriteLine(libromasreciente.Title);
+
+//suma de paginas de libros entre 0 y 500
+Console.WriteLine($"Suma total de paginas{queries.SumaDeTodasLasPaginasLibrosEntre200y500}");
 void ImprimirValores(IEnumerable<book> listalibros) //metodo para imprimir los valores en consola
 {
     //Muestra los titulos de las columnas

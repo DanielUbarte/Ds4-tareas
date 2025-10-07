@@ -113,4 +113,9 @@ public class LinqQueries
     {
         return librosCollection.MaxBy(p => p.PublishedDate);
     }
+
+    public int SumaDeTodasLasPaginasLibrosEntre200y500()
+    {
+        return librosCollection.Where(p => p.PageCount >= 200 && p.PageCount <= 500).Sum(p=> p.PageCount);
+    }
 }
