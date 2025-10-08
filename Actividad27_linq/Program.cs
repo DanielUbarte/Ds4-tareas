@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 //Console.WriteLine("Hello, World!");
 
-//video 20
+//video 21
 
 LinqQueries queries = new LinqQueries();//instancia de la clase LinqQueries
 //toda la coleccion
@@ -73,7 +73,12 @@ LinqQueries queries = new LinqQueries();//instancia de la clase LinqQueries
 //Console.WriteLine($"Suma total de paginas {queries.SumaDeTodasLasPaginasLibrosEntre0y500()}");
 
 //Concatenación de libros publicados despues del 2015
-Console.WriteLine(queries.TitulosDeLibrosDespuesDel2015Concatenados());
+//Console.WriteLine(queries.TitulosDeLibrosDespuesDel2015Concatenados());
+
+//promedio de caracteres del titulo de los libros
+//Console.WriteLine($"Promedio de caracteres del título de los libros: {queries.PromedioCaracteresTitulos()}");
+
+
 
 void ImprimirValores(IEnumerable<book> listalibros) //metodo para imprimir los valores en consola
 {
