@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 //Console.WriteLine("Hello, World!");
 
-//video 22
+//video 24
 
 LinqQueries queries = new LinqQueries();//instancia de la clase LinqQueries
 //toda la coleccion
@@ -79,8 +79,11 @@ LinqQueries queries = new LinqQueries();//instancia de la clase LinqQueries
 //Console.WriteLine($"Promedio de caracteres del título de los libros: {queries.PromedioCaracteresTitulos()}");
 
 //libros publicados despues del 2000 agrupados
-ImprimirGrupo(queries.LibrosDespuesDel2000AgrupadosPorAño());
+//ImprimirGrupo(queries.LibrosDespuesDel2000AgrupadosPorAño());
 
+//diccionario de libros por letra inicial
+var diccionariolookup = queries.DiccionariosDeLibrosPorLetras();
+ImprimirDiccionario(diccionariolookup, 'S');
 
 void ImprimirValores(IEnumerable<book> listalibros) //metodo para imprimir los valores en consola
 {
@@ -104,5 +107,14 @@ void ImprimirGrupo(IEnumerable<IGrouping<int,book>> listalibros)
         {
             Console.WriteLine("{0,-60} {1,-15} {2,15}", item.Title, item.PageCount, item.PublishedDate.ToShortDateString());
         }
+    }
+}
+
+void ImprimirDiccionario (ILookup<char, book> listalibros, char letra)
+{
+    Console.WriteLine("{0, -60} {1, 15} {2, 15}\n", "Titulo", "N. PAginas", "Fecha de publicacion");
+    foreach (var item in listalibros[letra])
+    { 
+        Console.WriteLine("{0, -60} {1, 15} {2, 15}", item.Title, item.PageCount, item.PublishedDate.ToShortDateString());
     }
 }
