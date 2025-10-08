@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 //Console.WriteLine("Hello, World!");
 
-//video 24
+//video 25
 
 LinqQueries queries = new LinqQueries();//instancia de la clase LinqQueries
 //toda la coleccion
@@ -82,8 +82,11 @@ LinqQueries queries = new LinqQueries();//instancia de la clase LinqQueries
 //ImprimirGrupo(queries.LibrosDespuesDel2000AgrupadosPorAño());
 
 //diccionario de libros por letra inicial
-var diccionariolookup = queries.DiccionariosDeLibrosPorLetras();
-ImprimirDiccionario(diccionariolookup, 'S');
+//var diccionariolookup = queries.DiccionariosDeLibrosPorLetras();
+//ImprimirDiccionario(diccionariolookup, 'S');
+
+//libros filtrados con la clausula join
+ImprimirValores(queries.LibrosDespuesDel2005ConMasDe500pg());
 
 void ImprimirValores(IEnumerable<book> listalibros) //metodo para imprimir los valores en consola
 {
